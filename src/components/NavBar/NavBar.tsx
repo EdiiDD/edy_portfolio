@@ -1,8 +1,8 @@
 import { AppBar, Avatar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography, Link } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react';
-import { pages } from '@/pages/pages';
 import { useLocation } from 'react-router-dom';
+import { pagesSections } from '../../pages/pagesSections';
 
 function Navbar() {
 	const backgroundColor = "#1a1a1a";
@@ -85,7 +85,7 @@ function Navbar() {
 							sx={{
 								display: { xs: 'block', md: 'none' },
 							}}>
-							{pages.map((page) => (
+							{pagesSections.map((page) => (
 								<MenuItem key={page.title} onClick={handleCloseNavMenu}>
 									<Typography
 										textAlign="center"
@@ -126,7 +126,7 @@ function Navbar() {
 							md: 'flex'
 						}
 					}}>
-						{pages.map((page) => (
+						{pagesSections.map((page) => (
 							<Link
 								noWrap
 								href={page.navigation}

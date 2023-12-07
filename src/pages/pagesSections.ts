@@ -1,4 +1,4 @@
-export const pages = [
+export const pagesSections = [
 	{
 		title: "About Me",
 		navigation: "#aboutme"
