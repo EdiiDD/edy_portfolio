@@ -1,0 +1,22 @@
+/* Experience.css */
+.experience-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.link-company {
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.date {
+	margin-top: 5px;
+}
+
+.description {
+	margin-top: 25px;
+}

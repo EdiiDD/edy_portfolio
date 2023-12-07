@@ -1,0 +1,26 @@
+#projects {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.projects-title {
+	text-align: center;
+}
+
+.experience {
+	text-align: left;
+	margin-top: 25px;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: orangered;
+}
