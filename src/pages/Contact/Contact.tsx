@@ -3,7 +3,7 @@ import './Contact.css';
 
 function Contact() {
 	return (
-		<Container id="contact" maxWidth="lg">
+		<Container maxWidth="lg">
 			<div className="contact-container">
 				<Typography variant="h1" className="projects-title">
 					Contact

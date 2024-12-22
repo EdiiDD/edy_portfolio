@@ -1,11 +1,20 @@
 import { Container, Typography } from '@mui/material';
 import './Home.css';
+import { getImageUrl } from '../../components/Utils/Image.utils';
+
 
 function Home() {
 	return (
-		<Container id="aboutme" maxWidth="lg">
+		<Container
+			id="about"
+			maxWidth="lg"
+			sx={{
+				minHeight: '100vh',
+				padding: 0,
+			}}
+		>
 			<div className="avatar-container">
-				<img src="src/assets/edy_filantropo.jpg" alt="edy_avatar" className="avatar-image" />
+				<img src={getImageUrl("edy_filantropo.jpg")} alt="edy_avatar" className="avatar-image" />
 				<div className="text-container">
 					<Typography variant="h1" className="avatar-text-title">
 						Hi, I'm Edy! 👋

@@ -1,7 +1,7 @@
 export const pagesSections = [
 	{
 		title: "About Me",
-		navigation: "#aboutme"
+		navigation: "#about"
 	},
 	{
 		title: "Experience",

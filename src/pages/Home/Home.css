@@ -1,40 +1,51 @@
 /* Avatar.css */
 .avatar-container {
-	height: 100vh;
+	min-height: 100vh;
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 1rem;
 }
 
 .avatar-image {
 	width: 100%;
-	max-width: 450px;
+	max-width: 300px;
 	height: auto;
 	border-radius: 50%;
 }
 
 .text-container {
-	margin-top: 15px;
-	margin-left: 15px;
-	color: black;
+	margin-top: 2rem;
+	width: 100%;
+	max-width: 600px;
+	padding: 0 1rem;
 }
 
 .avatar-text-title {
 	text-align: center;
+	margin-bottom: 1.5rem;
 }
 
 .avatar-text {
 	text-align: left;
+	font-size: 1rem;
+	line-height: 1.6;
 }
 
-@media (max-width: 85vh) {
+/* Tablet y Desktop */
+@media (min-width: 768px) {
 	.avatar-container {
-		flex-direction: column;
-		align-items: center;
+		flex-direction: row;
+		gap: 2rem;
+	}
+
+	.avatar-image {
+		max-width: 450px;
 	}
 
 	.text-container {
-		margin-top: 10px;
-		margin-left: 0;
+		margin-top: 0;
 	}
 }

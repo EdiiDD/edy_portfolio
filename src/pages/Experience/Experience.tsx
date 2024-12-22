@@ -4,21 +4,35 @@ import { experiences } from './experiences';
 
 function Experience() {
 	return (
-		<Container id="experience" maxWidth="lg">
+		<Container maxWidth="lg" sx={{ padding: 0 }}>
 			<div className="experience-container">
-				<Typography variant="h1" className="projects-title">
+				<Typography
+					variant="h2"
+					className="experience-title"
+					sx={{
+						fontSize: { xs: '2rem', md: '3rem' },
+						fontWeight: 'bold'
+					}}
+				>
 					Experience
 				</Typography>
 
 				{experiences.map((experience) => (
 					<div key={experience.id} className="experience">
-						<a className="link-company" href={experience.link} >🔗 {experience.company} </a>
-						<div className="date" >📅 {experience.date}</div>
+						<a
+							className="link-company"
+							href={experience.link}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							🔗 {experience.company}
+						</a>
+						<div className="date">📅 {experience.date}</div>
 						<div className="description">{experience.description}</div>
 					</div>
 				))}
 			</div>
-		</Container >
+		</Container>
 	);
 };
 

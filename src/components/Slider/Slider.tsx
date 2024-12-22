@@ -1,10 +1,16 @@
 import Container from "@mui/material/Container/Container";
 import './Slider.css';
 
-function Slider() {
+interface SliderProps {
+	id?: string;
+}
+
+function Slider({ id }: SliderProps) {
 	return (
-		<div className="slider">
-		</div>
+		<>
+			<div id={id} className="slider">
+			</div>
+		</>
 	);
 };
 

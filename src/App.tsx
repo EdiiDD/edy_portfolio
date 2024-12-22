@@ -11,10 +11,12 @@ function App() {
 			<BrowserRouter>
 				<NavBar />
 				<Home />
-				<Slider />
+				<Slider id="experience" />
 				<Experience />
-				<Slider />
+				<Slider id="projects" />
 				<Projects />
+				<Slider />
+				<Slider id="contact" />
 				<Contact />
 			</BrowserRouter>
 		</>
